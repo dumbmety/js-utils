@@ -15,11 +15,11 @@ function formatBytes(bytes, decimals = 2, locale = 'en') {
 
   if (!+bytes) return `0 ${locale == 'en' ? EN_BYTE : FA_BYTE}`;
 
-  let localeIndex = 0;
-  for (localeIndex; bytes >= 1024; localeIndex++) {
+  let unitIndex = 0;
+  for (unitIndex; bytes >= 1024; unitIndex++) {
     bytes /= 1024;
   }
 
   const dm = bytes % 1 === 0 ? 0 : decimals;
-  return `${bytes.toFixed(dm)} ${unitsMap[locale][localeIndex]}`;
+  return `${bytes.toFixed(dm)} ${unitsMap[locale][unitIndex]}`;
 }
