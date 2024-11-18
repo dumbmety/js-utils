@@ -25,5 +25,5 @@ formatBytes(1024 * 1024 * 1024 * 1024 * 1024 * 9); // 9 PB
 formatBytes(17605591, 0); // 17 MB
 formatBytes(17605591, 1); // 16.8 MB
 formatBytes(17605591); // 16.79 MB
-formatBytes(17605591, 1, 'fa'); // 16.8 مگابایت
+formatBytes(17605591, 1, "fa"); // 16.8 مگابایت
 ```
